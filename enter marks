@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>LPU</title>
+</head>
+<body>
+    <div class="main-container">
+        <a href="view_marks.php">view marks</a>
+        <div class="heading">
+            <h3>ENTER THE SYSTEM</h3>
+        </div>
+        <div class="sub-heading">
+            It is necessary to login in Your account in order to sign up for a course.
+        </div>
+        <div class="container">
+            <div class="signup-container">
+                <div class="heading">
+                    <font color="grey">ARE YOU NEW?</font> REGISTER
+                </div>
+                <div class="form-container">
+                    <form onsubmit="return checkform()" action="./register.php" method="POST">
+                        <div class="form-input">
+                           Name: <input type="text" class="form-element" name="name" id="name" placeholder="student name" required/>
+                        </div>
+                        <div class="form-input">
+                            roll number <input type="text" class="form-element" name="roll" id="roll" placeholder="Roll number" required/>
+                        </div>
+                        <div class="form-input">
+                            maths <input type="text" class="form-element" name="maths" id="maths" placeholder="Maths" required/>
+                        </div>
+                        <div class="form-input">
+                            science<input type="text" class="form-element" name="science" id="science" placeholder="Maths" required/>
+                        </div>
+                        <div class="form-input">
+                            computer<input type="text" class="form-element" name="computer" id="computer" placeholder="Maths" required/>
+                        </div>
+                        <div class="form-input">
+                            socail<input type="text" class="form-element" name="socail" id="social" placeholder="Maths" required/>
+                        </div>
+                        <div class="form-input">
+                            english<input type="text" class="form-element" name="english" id="english" placeholder="Maths" required/>
+                        </div>
+                        <div class="form-input">
+                            total <input type="text" class="form-element" name="total" id="total" placeholder="Maths" readonly required/>
+                        </div>
+                        <div class="form-input">
+                            percentage <input type="text" class="form-element" name="per" id="per" placeholder="Maths" readonly required/>
+                        </div>
+                        <div class="form-input" style="display:flex"> 
+                            <input type="submit" class="register_btn" name="register" id="register" value="Register"/>
+                            <div style="border:1px solid #ccc; width:100px;text-align:center;padding:5px;cursor:pointer" onclick="cal()">Calculate</div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+<script src="./main.js"></script>
+</body>
+</html>
